@@ -11,25 +11,25 @@ public class DemoSingleLinkedList {
 
 
         while(true){
-            System.out.println("1: Display List");
-            System.out.println("2: Count the number of nodes");
-            System.out.println("3: Search an element");
-            System.out.println("4: Insert an empty list/Insert in begining in the list");
-            System.out.println("5: Insert a node at the end of list");
-            System.out.println("6: Insert a node after a specify node");
-            System.out.println("7: Insert a node before a specify node");
-            System.out.println("8: Insert a node at a given position");
-            System.out.println("9: Delete first Node");
-            System.out.println("10: Delete Last Node");
-            System.out.println("11: Delete any Node");
-            System.out.println("12: Reverse the List");
-            System.out.println("13: Bubble sort by exchanging data");
-            System.out.println("14: Bubble sort by exchanging links");
-            System.out.println("15: Mergesort");
-            System.out.println("16: Insert Cycle");
-            System.out.println("17: Detect Cycle");
-            System.out.println("18: Remove Cycle");
-            System.out.println("19: Quit");
+            System.out.print(" | 1: Display List");
+            System.out.print(" | 2: Count the number of nodes");
+            System.out.print(" | 3: Search an element");
+            System.out.print(" | 4: Insert an empty list/Insert in begining in the list \n");
+            System.out.print(" | 5: Insert a node at the end of list");
+            System.out.print(" | 6: Insert a node after a specify node");
+            System.out.print(" | 7: Insert a node before a specify node");
+            System.out.print(" | 8: Insert a node at a given position\n");
+            System.out.print(" | 9: Delete first Node");
+            System.out.print(" | 10: Delete Last Node");
+            System.out.print(" | 11: Delete any Node");
+            System.out.print(" | 12: Reverse the List\n");
+            System.out.print(" | 13: Bubble sort by exchanging data");
+            System.out.print(" | 14: Bubble sort by exchanging links");
+            System.out.print(" | 15: Mergesort");
+            System.out.print(" | 16: Insert Cycle\n");
+            System.out.print(" | 17: Detect Cycle");
+            System.out.print(" | 18: Remove Cycle");
+            System.out.print(" | 19: Quit |");
 
             System.out.println("Enter your choice");
             choice = scanner.nextInt();
@@ -69,7 +69,7 @@ public class DemoSingleLinkedList {
                     data = scanner.nextInt();
                     System.out.println("Enter the element after which to insert");
                     x=scanner.nextInt();
-                    //singleLinkedList.insertAfter(data,x);
+                    singleLinkedList.insertAfter(data,x);
                     break;
 
                     case 7:
@@ -77,7 +77,7 @@ public class DemoSingleLinkedList {
                         data = scanner.nextInt();
                         System.out.println("Enter the element before which to insert");
                         x=scanner.nextInt();
-                        //singleLinkedList.insertBefore(data,x);
+                        singleLinkedList.insertBefore(data,x);
                     break;
 
                 case 8:
@@ -85,30 +85,30 @@ public class DemoSingleLinkedList {
                     data = scanner.nextInt();
                     System.out.println("Enter the Position at which to insert");
                     x=scanner.nextInt();
-                    //singleLinkedList.insertAtPosition(data,x);
+                    singleLinkedList.insertAtPosition(data,x);
                     break;
                 case 9:
-                    //singleLinkedList.deletFirstNode();
+                    singleLinkedList.deletFirstNode();
                     break;
 
                 case 10:
-                    //singleLinkedList.deleteLastNode();
+                    singleLinkedList.deleteLastNode();
                     break;
                 case 11:
                     System.out.println("Enter the element to be deleted");
                     data = scanner.nextInt();
-                    //singleLinkedList.deleteNode(data);
+                    singleLinkedList.deleteNode(data);
                     break;
 
                 case 12:
-                    //singleLinkedList.reverseList();
+                    singleLinkedList.reverseList();
                     break;
                 case 13:
-                    //singleLinkedList.bubbleSortExData();
+                    singleLinkedList.bubbleSortExData();
                     break;
 
                 case 14:
-                    //singleLinkedList.bubbleSortExLinks();
+                    singleLinkedList.bubbleSortExLinks();
                     break;
                 case 15:
                     //singleLinkedList.mergeSort();
