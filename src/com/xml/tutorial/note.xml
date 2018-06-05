@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<note xmlns="http://example.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="C:\Users\admin\IdeaProjects\xmltutorial\src\com\xml\tutorial\note.xsd">
+    <to>Shashi</to>
+    <from>Shashi</from>
+    <heading>Joining Letter</heading>
+    <body>How are you?</body>
+</note>
