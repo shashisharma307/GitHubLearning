@@ -49,7 +49,7 @@ public class DemoSingleLinkedList {
                     System.out.println("Enter the element to be serached");
                     data = scanner.nextInt();
                     boolean result =  singleLinkedList.search(data);
-                    System.out.println(result);
+                    System.out.println("Result found = " + result);
                     break;
 
                 case 4:
@@ -61,7 +61,7 @@ public class DemoSingleLinkedList {
                 case 5:
                     System.out.println("Enter the element to be inserted");
                     data = scanner.nextInt();
-                    scanner.insertAtEnd(data);
+                    singleLinkedList.insertAtEnd(data);
                     break;
 
                 case 6:
@@ -69,7 +69,7 @@ public class DemoSingleLinkedList {
                     data = scanner.nextInt();
                     System.out.println("Enter the element after which to insert");
                     x=scanner.nextInt();
-                    singleLinkedList.insertAfter(data,x);
+                    //singleLinkedList.insertAfter(data,x);
                     break;
 
                     case 7:
@@ -101,33 +101,33 @@ public class DemoSingleLinkedList {
                     break;
 
                 case 12:
-                    singleLinkedList.reverseList();
+                    //singleLinkedList.reverseList();
                     break;
                 case 13:
-                    singleLinkedList.bubbleSortExData();
+                    //singleLinkedList.bubbleSortExData();
                     break;
 
                 case 14:
-                    singleLinkedList.bubbleSortExLinks();
+                    //singleLinkedList.bubbleSortExLinks();
                     break;
                 case 15:
-                    singleLinkedList.mergeSort();
+                    //singleLinkedList.mergeSort();
                     break;
 
                 case 16:
                     System.out.println("Enter the element at which cycle has to be inserted");
                     data = scanner.nextInt();
-                    singleLinkedList.insertCycle(data);
+                    //singleLinkedList.insertCycle(data);
                     break;
                 case 17:
-                    if(singleLinkedList.hasCycle())
+                    /*if(singleLinkedList.hasCycle())
                         System.out.println("List has a cycle");
                     else
-                        System.out.println("List doesn't have cycle");
+                        System.out.println("List doesn't have cycle");*/
                     break;
 
                 case 18:
-                    singleLinkedList.removeCycle();
+                    //singleLinkedList.removeCycle();
                     break;
 
                     default:

@@ -18,7 +18,7 @@ public class SingleLinkedList {
         System.out.println("List is: ");
         p=start;
         while(p!=null){
-            System.out.println(p.info + " ");
+            System.out.print(p.info + " ");
             p=p.link;
         }
         System.out.println();
@@ -56,7 +56,7 @@ public class SingleLinkedList {
 
     public void insertAtBegining(int x){
         Node temp = new Node(x, null);
-        temp.link = null;
+        temp.link = start;
         start = temp;
     }
 
@@ -89,5 +89,22 @@ public class SingleLinkedList {
             insertAtEnd(data);
         }
     }/*End of CreateList*/
+
+    public void insertAfter(int data, int x){
+        Node p = start;
+        while(p!=null){
+            if(p.info == x)
+                break;
+            p=p.link;
+
+            if(p==null)
+                System.out.println(x + "is not present in the list");
+            else{
+                Node temp = new Node(data, null);
+                temp.link = p.link;
+                p.link = temp;
+            }
+        }
+    }/*End of insert after*/
 
 }
